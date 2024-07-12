@@ -12,6 +12,7 @@ make
 
 二、进行模糊测试
 0. 准备
+用mutifuzz_update0712文件夹中的client.c 和 interface.c替换原文件
 确保已经编译好 afl-2.52b，client 以及interface
 
 1. 编译插桩
