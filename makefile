@@ -3,6 +3,7 @@ all: read_pdf  store_txt  convert_pdf
 	mkdir -p logs
 
 read_pdf: read_pdf.c
+	mkdir -p bin
 	$(CC) read_pdf.c -o ./bin/read_pdf
 
 convert_pdf: convert_pdf.c hooktest.h
