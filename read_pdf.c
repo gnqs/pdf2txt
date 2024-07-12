@@ -8,7 +8,7 @@
 #define SERVICE2_IP "127.0.0.1"  //convert_pdf对应信息
 #define SERVICE2_PORT 8081
 
-#define OUTPUT_FILE 
+// #define OUTPUT_FILE 
 
 void error_handling(char *message);
 void log_mes(char *message);

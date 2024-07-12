@@ -12,11 +12,10 @@
 
 # define BUF_SIZE 1024
 # define LISTEN_PORT 8081
-
 # define SERVICE3_IP "127.0.0.1"    //store_txt对应信息
 # define SERVICE3_PORT 8082
-# define PATH_TO_PDFTOTEXT "/home/gnq/code/pdf2txt/xpdf-3.02/xpdf/pdftotext"
-# define OUTPUT_FILE
+# define PATH_TO_PDFTOTEXT "./xpdf-3.02/xpdf/pdftotext"
+// # define OUTPUT_FILE
 
 void error_handling(char *message);
 void log_mes(char *message);
@@ -28,7 +27,7 @@ int main(){
 #ifdef OUTPUT_FILE
     FILE *log_file = fopen("./logs/convert_pdf.log", "a");
     if (log_file == NULL) {
-        perror("Failed to open ./logs/read_pdf.log");
+        perror("Failed to open ./logs/convert_pdf.log");
         return 1;
     }
 

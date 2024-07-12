@@ -8,7 +8,7 @@
 
 #define BUF_SIZE 1024
 #define LISTEN_PORT 8082
-#define OUTPUT_FILE
+// #define OUTPUT_FILE
 
 void error_handling(char *message);
 void log_mes(char *message);
