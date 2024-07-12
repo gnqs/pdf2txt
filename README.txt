@@ -4,7 +4,12 @@ service2: convert_pdf.c (接收service1发送来的pdf，调用xpdf中的pdftote
 service3: store_txt.c (接收service2发送来的txt并保存在本地)
 
 一、基本运行：
-make 
+#从pdf2txt/开始运行
+make
+cd xpdf-3.02
+./configure    
+make
+cd ../
 ./bin/read_pdf [path/to/pdf_file]
 ./bin/convert_pdf
 ./bin/store_txt
@@ -22,6 +27,7 @@ make
     export CXX=[path/to]/afl-2.52b/afl-g++
     make
     cd xpdf-3.02
+    ./configure    
     make
 
 
