@@ -1,4 +1,5 @@
 fuzz.log
 in_dir/
+out_dir/
 bin/
 tmp/
